@@ -1,0 +1,50 @@
+$primary-color: #D25380;
+$secondary-color: #F6C391;
+$tertiary-color: #E08E6D;
+
+.card {
+    background: $tertiary-color;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+    .card-body{
+        height: 280px;
+    }
+    img {
+        height: 100%;
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .body {
+        padding-top: 0px;
+    }
+
+    p {
+        margin: 15px 0px;
+        height: 120px;
+        overflow: hidden;
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+
+    h4 {
+        height: 75px;
+        overflow: hidden;
+        padding: 5px 15px;
+        font-size: 18px;
+        background: linear-gradient(to right, $primary-color, $secondary-color, $tertiary-color);
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    span {
+        background: $primary-color;
+        border-radius: 30px;
+        padding: 3px 7px;
+    }
+}

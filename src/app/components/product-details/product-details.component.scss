@@ -1,0 +1,10 @@
+$primary-color: #D25380;
+$secondary-color: #F6C391;
+$tertiary-color: #E08E6D;
+
+.card {
+    background: linear-gradient($primary-color, $secondary-color, $tertiary-color);
+    img {
+        height: 40vh;
+    }
+}

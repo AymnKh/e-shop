@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="mt-2">
+    <label for="categories" class="text-capitalize">categories</label>
+    <select name="" class="form-control w-25" id="" (change)="selectCategory($event)">
+      <option value="all">All</option>
+      <option [value]="cat" *ngFor="let cat of categories" >{{cat}}</option>
+    </select>
+  </div>
+  <div class="text-center" *ngIf="loading">
+    <app-loading></app-loading>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 " *ngFor="let product of products">
+      <app-product-card [product]="product"></app-product-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+$primary-color: #D25380;
+$secondary-color: #F6C391;
+$tertiary-color: #E08E6D;
+.navbar{
+    background:linear-gradient($tertiary-color,$secondary-color,$primary-color) ;
+    .nav-link{
+        font-weight: bold;
+        margin: 0px 20px;
+        color: $primary-color;
+        &:hover {
+                color: #FFFAF4;
+            }
+    }
+    .nav-link .active{
+        color: #FFFAF4;
+    }
+   
+}

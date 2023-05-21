@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="text-danger">shopping cart</h1>
+  <div class="head-cart">
+    <p class="lead">
+      you have <label class="text-danger">{{ cart.length }}</label>
+      items in your cart
+    </p>
+    <span class="text-danger card-header"> Clear shopping cart </span>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>name</th>
+        <th class="text-start">price</th>
+        <th>quantity</th>
+        <th>total</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of cart">
+      <tr>
+        <td>
+          <img [src]="item.product.image" alt="product" class="img-fluid" />
+        </td>
+        <td class="w-25">{{ item.product.title }}</td>
+        <td>{{ item.product.price }}</td>
+        <td>
+          {{ item.quantity }}
+        </td>
+        <td>{{ item.quantity * item.product.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
