@@ -1,9 +1,9 @@
-$primary-color: #D25380;
-$secondary-color: #F6C391;
-$tertiary-color: #E08E6D;
+$primary-color: #8B1874;
+$secondary-color: #B71375;
+$tertiary-color: #FC4F00;
 
 .card {
-    background: $tertiary-color;
+    background: $primary-color;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -37,13 +37,13 @@ $tertiary-color: #E08E6D;
         overflow: hidden;
         padding: 5px 15px;
         font-size: 18px;
-        background: linear-gradient(to right, $primary-color, $secondary-color, $tertiary-color);
+        background: linear-gradient(to right,  $secondary-color, $primary-color);
         font-weight: 600;
         margin-top: 10px;
     }
 
     span {
-        background: $primary-color;
+        background: $secondary-color;
         border-radius: 30px;
         padding: 3px 7px;
     }

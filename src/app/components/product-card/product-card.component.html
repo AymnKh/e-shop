@@ -1,10 +1,10 @@
-<div class="card my-3">
+<div class="card my-3" >
   <div class="row g-0">
-    <div class="col-md-4">
-      <img [src]="product.image" class="img-fluid rounded-start" alt="..." />
+    <div class="col-md-4" (click)="details(product.id)">
+      <img [src]="product.image" class="img-fluid rounded-start"/>
     </div>
     <div class="col-md-8">
-      <div class="card-body">
+      <div class="card-body" (click)="details(product.id)">
         <h4 class="card-title">{{ product.title }}</h4>
         <p class="card-text">{{ product.description }}</p>
         <span class="text-body-secondary">{{ product.price | currency }}</span>

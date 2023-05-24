@@ -1,6 +1,19 @@
-.table{
-    img{
-        width: 100px;
-        height: 100px;
+$primary-color: #8B1874;
+$secondary-color: #B71375;
+$tertiary-color: #FC4F00;
+.container{
+    p{
+        font-size: 20px;
+        font-weight: bold;
+        color: $primary-color;
+        label{
+            color: $secondary-color !important;
+        }
     }
+    .table {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
 }

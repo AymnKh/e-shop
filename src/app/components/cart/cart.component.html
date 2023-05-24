@@ -2,12 +2,15 @@
   <h1 class="text-danger">shopping cart</h1>
   <div class="head-cart">
     <p class="lead">
-      you have <label class="text-danger">{{ cart.length }}</label>
+      you have <label>{{ cart.length }}</label>
       items in your cart
     </p>
-    <span class="text-danger card-header"> Clear shopping cart </span>
+    <button class="btn btn-danger" (click)="clearCart()" *ngIf="cart.length !== 0"> Clear shopping cart </button>
   </div>
-  <table class="table">
+  <div class="alert alert-danger mt-2" role="alert" *ngIf="cart.length == 0">
+  No items in cart
+</div>
+  <table class="table" *ngIf="cart.length !== 0">
     <thead>
       <tr>
         <th></th>
@@ -32,4 +35,8 @@
       </tr>
     </tbody>
   </table>
+  <div class="total" *ngIf="cart.length !== 0">
+    <p class="lead">
+      total price: <label>{{totalPrice}}</label>
+    </p>
 </div>

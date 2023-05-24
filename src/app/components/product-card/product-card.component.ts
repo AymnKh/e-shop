@@ -43,4 +43,5 @@ export class ProductCardComponent {
     }
     localStorage.setItem('cart', JSON.stringify(cart)); // save the cart to local storage
   }
+  
 }

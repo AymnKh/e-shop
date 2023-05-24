@@ -1,10 +1,18 @@
-$primary-color: #D25380;
-$secondary-color: #F6C391;
-$tertiary-color: #E08E6D;
-
+$primary-color: #8B1874;
+$secondary-color: #B71375;
 .card {
-    background: linear-gradient($primary-color, $secondary-color, $tertiary-color);
+    background: $primary-color;
     img {
         height: 40vh;
+    }
+    .price{
+        background-color: $secondary-color;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .details{
+        color:black;
+        font-weight: bold;
+        font-size: 20px;
     }
 }
